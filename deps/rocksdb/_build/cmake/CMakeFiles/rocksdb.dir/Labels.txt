@@ -1,0 +1,13 @@
+# Target labels
+ rocksdb
+# Source files and their labels
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/CMakeFiles/rocksdb
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/CMakeFiles/rocksdb.rule
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/CMakeFiles/rocksdb-complete.rule
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-install.rule
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-mkdir.rule
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-download.rule
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-update.rule
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-patch.rule
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-configure.rule
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-build.rule

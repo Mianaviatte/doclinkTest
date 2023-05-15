@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/CMakeFiles/rocksdb"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/CMakeFiles/rocksdb.rule"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/CMakeFiles/rocksdb-complete.rule"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-install.rule"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-mkdir.rule"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-download.rule"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-update.rule"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-patch.rule"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-configure.rule"
+		},
+		{
+			"file" : "/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-stamp/rocksdb-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"rocksdb"
+		],
+		"name" : "rocksdb"
+	}
+}

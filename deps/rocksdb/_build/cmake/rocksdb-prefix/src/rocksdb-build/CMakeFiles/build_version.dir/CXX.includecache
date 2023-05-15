@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/build_version.cc
+build_version.h
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/build_version.h
+
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/deps/rocksdb/util/build_version.h
+

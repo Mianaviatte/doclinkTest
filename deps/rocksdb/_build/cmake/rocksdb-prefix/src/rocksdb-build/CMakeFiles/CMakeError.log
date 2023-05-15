@@ -1,0 +1,94 @@
+Determining if the getauxval exist failed with the following output:
+Change Dir: /home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2e475/fast && make[3]: Entering directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_2e475.dir/build.make CMakeFiles/cmTC_2e475.dir/build
+make[4]: Entering directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2e475.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -W -Wextra -Wall -Wsign-compare -Wshadow -Wno-unused-parameter -Wno-unused-variable -Woverloaded-virtual -Wnon-virtual-dtor -Wno-missing-field-initializers -Wno-strict-aliasing -fno-omit-frame-pointer -momit-leaf-frame-pointer -fno-builtin-memcmp  -fPIE   -o CMakeFiles/cmTC_2e475.dir/CheckSymbolExists.cxx.o -c /home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:2:10: fatal error: auvx.h: No such file or directory
+    2 | #include <auvx.h>
+      |          ^~~~~~~~
+compilation terminated.
+make[4]: *** [CMakeFiles/cmTC_2e475.dir/build.make:66: CMakeFiles/cmTC_2e475.dir/CheckSymbolExists.cxx.o] Error 1
+make[4]: Leaving directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:121: cmTC_2e475/fast] Error 2
+make[3]: Leaving directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+
+
+File /home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <auvx.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getauxval
+  return ((int*)(&getauxval))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_b011e/fast && make[3]: Entering directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_b011e.dir/build.make CMakeFiles/cmTC_b011e.dir/build
+make[4]: Entering directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b011e.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_b011e.dir/src.c.o   -c /home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b011e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b011e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_b011e.dir/src.c.o  -o cmTC_b011e 
+/usr/bin/ld: CMakeFiles/cmTC_b011e.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[4]: *** [CMakeFiles/cmTC_b011e.dir/build.make:87: cmTC_b011e] Error 1
+make[4]: Leaving directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:121: cmTC_b011e/fast] Error 2
+make[3]: Leaving directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0e9e1/fast && make[3]: Entering directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0e9e1.dir/build.make CMakeFiles/cmTC_0e9e1.dir/build
+make[4]: Entering directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0e9e1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_0e9e1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0e9e1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0e9e1.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0e9e1.dir/CheckFunctionExists.c.o  -o cmTC_0e9e1  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[4]: *** [CMakeFiles/cmTC_0e9e1.dir/build.make:87: cmTC_0e9e1] Error 1
+make[4]: Leaving directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+make[3]: *** [Makefile:121: cmTC_0e9e1/fast] Error 2
+make[3]: Leaving directory '/home/mianaviatte/Documents/doclinkTest/deps/rocksdb/_build/cmake/rocksdb-prefix/src/rocksdb-build/CMakeFiles/CMakeTmp'
+
+
+
