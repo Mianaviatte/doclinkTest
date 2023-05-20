@@ -8,7 +8,7 @@ defmodule Test do
       {:ok, pid} = :bpe.start(BPE.process(Test.Proc.def(), id: :erlang.list_to_binary(:kvs.seq(:process, 1))), [testDoc()])
       :bpe.next pid
       pid
-    end, :lists.seq(1, 2000))
+    end, :lists.seq(1, 10000))
     :lists.foreach(fn pid ->
       spawn(fn ->
         t1 = :rand.uniform(50); t2 = :rand.uniform(200)
